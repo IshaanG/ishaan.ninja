@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/IshaanG/ishaan.ninja/master/src/images/logo.png" width="145" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/IshaanG/ishaan.ninja/master/src/assets/images/icon.png" width="100" />
 </div>
 <h1 align="center">
   ishaan.ninja
@@ -57,4 +57,3 @@
    ```shell
    gatsby serve
    ```
-

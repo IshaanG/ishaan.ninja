@@ -36,3 +36,12 @@ span {
     font-weight: $weight-normal;
   }
 }
+
+.navbar-menu {
+  box-shadow: none;
+}
+
+.navbar-burger {
+  border: 0;
+  background-color: transparent;
+}
