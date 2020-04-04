@@ -28,8 +28,9 @@ const Layout = ({ children, breadcrumbs }) => {
       <div className="site">
         <main className="site-content">{children}</main>
         <footer className="footer">
-          <div className="content has-text-centered">
-            © {new Date().getFullYear()} Ishaan Gupta
+          <div className="content has-text-centered has-text-light">
+            © {new Date().getFullYear()} Ishaan Gupta | Built with{" "}
+            <a href="https://www.gatsbyjs.org/">Gatsby.js</a>.
           </div>
         </footer>
       </div>

@@ -5,7 +5,7 @@
   ishaan.ninja
 </h1>
 <p align="center">
-  My personal website <a href="https://ishaan.ninja/" target="_blank">ishaan.ninja</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  My personal website <a href="https://ishaan.ninja/" target="_blank">ishaan.ninja</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> styled with <a href="https://bulma.io/" target="_blank">Bulma</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/ishaan/deploys" target="_blank">
