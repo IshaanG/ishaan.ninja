@@ -12,7 +12,7 @@ import Layout from "../components/layout"
 library.add(faGithub, faTwitter, faLinkedin)
 
 const IndexPage = () => (
-  <Layout>
+  <Layout breadcrumbs={["Home"]}>
     <div className="container">
       <div className="columns is-mobile">
         <div className="column">

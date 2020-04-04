@@ -3,8 +3,8 @@ import React, { useState } from "react"
 
 const Header = ({ siteTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   const burgerClass = isMenuOpen ? "is-active" : ""
+
   return (
     <header>
       <nav className="navbar">
