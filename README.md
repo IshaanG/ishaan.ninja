@@ -1,59 +1,43 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/IshaanG/ishaan.ninja/master/src/assets/images/icon.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/IshaanG/ishaan.ninja/master/assets/icon.png" width="100" />
 </div>
-<h1 align="center">
-  ishaan.ninja
-</h1>
+<h1 align="center">ishaan.ninja</h1>
 <p align="center">
-  My personal website <a href="https://ishaan.ninja/" target="_blank">ishaan.ninja</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> styled with <a href="https://bulma.io/" target="_blank">Bulma</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/ishaan/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/bd482b4e-8a44-4ed8-ba9a-661ae09e95a0/deploy-status" alt="Netlify Status" />
-  </a>
+  My personal site, <a href="https://ishaan.ninja/" target="_blank">ishaan.ninja</a>.
+  A single-page, no-build static site (plain HTML + CSS) hosted on
+  <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
-## 🛠 Installation and Set Up
+## Structure
 
-1.  **Install the Gatsby CLI.**
+```
+index.html      # the whole page
+styles.css      # all styling (dark theme, responsive)
+resume.pdf      # downloadable resume
+assets/         # photo + favicon
+netlify.toml    # deploy config (no build, publish root)
+```
 
-    ```shell
-    npm install -g gatsby-cli
-    ```
+## Develop
 
-2.  **Clone the repository.**
+No build step or dependencies. Open `index.html` directly, or serve it:
 
-    ```shell
-    git clone https://github.com/IshaanG/ishaan.ninja.git
-    ```
+```shell
+python3 -m http.server 8000   # then open http://localhost:8000
+```
 
-3.  **Get the dependencies.**
+## Deploy
 
-    ```shell
-    cd ishaan.ninja
-    npm install
-    ```
+Netlify auto-deploys the `master` branch. `netlify.toml` sets no build command
+and publishes the repo root.
 
-4.  **Start developing.**
+### Regenerating the resume PDF
 
-    ```shell
-    gatsby develop
-    ```
+The PDF is rendered from a print-styled HTML via headless Chrome. To update it,
+edit the resume markup and re-run:
 
-5.  **Open the source code and start editing!**
-
-    Your site is now running at http://localhost:8000
-
-## 🚀 Building and Running for Production
-
-1. **Generate a full static production build.**
-
-   ```shell
-   gatsby build
-   ```
-
-1. **Preview the site as it will appear once deployed.**
-
-   ```shell
-   gatsby serve
-   ```
+```shell
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf=resume.pdf file:///absolute/path/to/resume.html
+```

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ishaan Gupta — Backend Engineer</title>
+    <meta
+      name="description"
+      content="Ishaan Gupta is a backend engineer building distributed systems in Go and Java on AWS, with a focus on enterprise integrations, applied AI, and observability."
+    />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="preload" as="image" href="assets/ishaan.jpg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ishaan Gupta — Backend Engineer" />
+    <meta
+      property="og:description"
+      content="Backend engineer building distributed systems in Go and Java that ship measurable revenue and reliability impact at scale."
+    />
+    <meta property="og:url" content="https://ishaan.ninja" />
+    <meta property="og:image" content="https://ishaan.ninja/assets/ishaan.jpg" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#top" aria-label="Ishaan Gupta — home">ishaan<span>.ninja</span></a>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero container">
+        <div class="hero-text">
+          <p class="eyebrow">Backend Engineer · Distributed Systems · Applied AI</p>
+          <h1>Ishaan Gupta</h1>
+          <p class="lead">
+            I build distributed backend systems in Go and Java that ship measurable
+            revenue and reliability impact at scale.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="btn" href="https://github.com/IshaanG" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/ishaang12" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="mailto:ishaang12@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/ishaan.jpg" width="180" height="180" alt="Ishaan Gupta" />
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats container" aria-label="Impact at a glance">
+        <div class="stat">
+          <span class="stat-num">$1.76M</span>
+          <span class="stat-label">sales pipeline from APIs I built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3&times;</span>
+          <span class="stat-label">faster p95 via distributed tracing</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">33</span>
+          <span class="stat-label">reviewer-weeks saved with async GPT</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+ &rarr; 5</span>
+          <span class="stat-label">daily pages after alert triage</span>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about container">
+        <p>
+          I'm a software engineer with 4+ years at Mindtickle, where I grew from intern
+          to SDE-II building distributed backend systems in Go and Java on AWS. My work
+          centers on enterprise API and integration design, productionizing LLM
+          pipelines, and observability that keeps systems debuggable at scale. I've been
+          rated Exceeds Expectations across review cycles for high-ownership delivery of
+          ambiguous, cross-team projects.
+        </p>
+      </section>
+
+      <!-- Selected work -->
+      <section class="work container" id="work">
+        <h2 class="section-title">Selected work</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-metric">3,000 files / 40GB load-tested</div>
+            <h3>Custom Sync OpenAPIs — Thomson Reuters, Lonza</h3>
+            <p>
+              Designed and shipped RESTful custom-sync APIs for Thomson Reuters' AEM DAM,
+              then extended them to Lonza with move operations and metadata mapping. The
+              APIs became a reusable platform capability now powering Notion and Autodesk
+              onboarding.
+            </p>
+            <ul class="tags">
+              <li>Go</li><li>OpenAPI</li><li>AWS</li><li>Enterprise integrations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-metric">$1.76M sales pipeline · Microsoft, PepsiCo</div>
+            <h3>AI Roleplay campaign APIs</h3>
+            <p>
+              Built secure backend endpoints with CORS protection, JWT token expiry, and
+              rate limiting, integrated with Marketo for the marketing funnel. The
+              campaign drove 107 form fills, 78 interactions, and 65 meetings.
+            </p>
+            <ul class="tags">
+              <li>Go</li><li>API security</li><li>Marketo</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-metric">33 reviewer-weeks saved · Cisco</div>
+            <h3>Missions AI Reviews — async GPT</h3>
+            <p>
+              Designed an async GPT pipeline with an AI reviewer persona, idempotent
+              retries, and fallback logic for single and bulk flows, and migrated the LLM
+              gateway from synchronous to asynchronous responses.
+            </p>
+            <ul class="tags">
+              <li>Go</li><li>GPT / LLM</li><li>Async pipelines</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-metric">3&times; faster p95 · enabled GA</div>
+            <h3>MS Viewer (WOPI) optimization</h3>
+            <p>
+              Introduced distributed tracing with Datadog to a fragile document-viewer
+              flow, then diagnosed and removed the bottlenecks degrading latency, clearing
+              the path to general availability.
+            </p>
+            <ul class="tags">
+              <li>Datadog</li><li>Distributed tracing</li><li>Performance</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-metric">SQL query 30&times; faster · load-resilient</div>
+            <h3>Cisco Flagship Event recorder</h3>
+            <p>
+              Audited high-load mission flows, built and ran automated load tests, and
+              moved non-critical RPC steps such as Kinesis puts async to keep the recorder
+              resilient at unprecedented scale.
+            </p>
+            <ul class="tags">
+              <li>Java</li><li>SQL</li><li>Load testing</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-metric">Daily pages 20+ &rarr; ~5</div>
+            <h3>Operational excellence — PagerDuty</h3>
+            <p>
+              Ran AI-assisted analysis categorizing 100+ alerts into actionable and
+              non-actionable, set thresholds and runbooks, and built Gemini-based
+              auto-generation of pager summaries, yielding multiple pager-free days a month.
+            </p>
+            <ul class="tags">
+              <li>PagerDuty</li><li>Observability</li><li>On-call</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Go, Java, SQL, C++, Python</p>
+          </div>
+          <div class="skill-group">
+            <h3>Systems &amp; messaging</h3>
+            <p>Kafka, gRPC, RabbitMQ, MySQL, Couchbase, Redis, Snowflake, Elasticsearch</p>
+          </div>
+          <div class="skill-group">
+            <h3>AWS &amp; cloud-native</h3>
+            <p>Step Functions, Lambda, API Gateway, SQS, Kinesis, EKS / Kubernetes, Docker</p>
+          </div>
+          <div class="skill-group">
+            <h3>AI &amp; integrations</h3>
+            <p>LLM APIs (GPT, Gemini), ElevenLabs, Colossyan, Marketo, OpenAPI, REST, GraphQL</p>
+          </div>
+          <div class="skill-group">
+            <h3>Observability &amp; ops</h3>
+            <p>Datadog, SumoLogic, Metabase, PagerDuty, distributed tracing, synthetic monitoring</p>
+          </div>
+          <div class="skill-group">
+            <h3>Recognition</h3>
+            <p>Exceeds Expectations (2023–2026), High Quality Release Award, Data Driven Team Award, AIgnite hackathon winner</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact container" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-lead">
+          Open to senior backend, product, and applied-AI roles. Based in Bengaluru, India.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:ishaang12@gmail.com">ishaang12@gmail.com</a>
+          <a class="btn" href="https://linkedin.com/in/ishaang12" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/IshaanG" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year">2026</span> Ishaan Gupta · Bengaluru, India
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

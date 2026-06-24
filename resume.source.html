@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ishaan Gupta — Resume</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 14mm 15mm;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #1a1a1a;
+        font-size: 10.2pt;
+        line-height: 1.4;
+        margin: 0;
+      }
+      header {
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 22pt;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+      .role {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #333;
+        margin: 2px 0 6px;
+      }
+      .contact {
+        font-size: 9pt;
+        color: #444;
+      }
+      .contact a {
+        color: #1155cc;
+        text-decoration: none;
+      }
+      h2 {
+        font-size: 10.5pt;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 2px;
+        margin: 14px 0 7px;
+      }
+      .summary {
+        margin: 0;
+      }
+      .job {
+        margin-bottom: 9px;
+      }
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .job-title {
+        font-weight: 700;
+      }
+      .job-meta {
+        font-size: 9pt;
+        color: #555;
+        font-style: italic;
+      }
+      ul {
+        margin: 4px 0 0;
+        padding-left: 16px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 28px;
+      }
+      .skills p,
+      .other p {
+        margin: 2px 0;
+      }
+      .label {
+        font-weight: 700;
+      }
+      a {
+        color: #1155cc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ishaan Gupta</h1>
+      <div class="role">Software Engineer · Backend &amp; Distributed Systems</div>
+      <div class="contact">
+        Bengaluru, India · ishaang12@gmail.com ·
+        <a href="https://linkedin.com/in/ishaang12">linkedin.com/in/ishaang12</a>
+        · <a href="https://github.com/IshaanG">github.com/IshaanG</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Software Engineer with 4+ years building scalable distributed backend
+        systems, with a focus on performance, reliability, and productionizing
+        generative AI. Strong track record in enterprise API and integration
+        design, AWS-native event-driven architectures, and observability
+        engineering using Go, Java, Kafka, and cloud-native stacks. Recognized for
+        high-ownership delivery of ambiguous, cross-team work and rated Exceeds
+        Expectations across multiple review cycles.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Mindtickle — Software Development Engineer II</span>
+          <span class="job-meta">Bengaluru · Feb 2024 – Present</span>
+        </div>
+        <ul>
+          <li>
+            Designed and shipped Custom Sync OpenAPIs for enterprise customers
+            (Thomson Reuters AEM DAM, Lonza); load-tested to 3,000 files / 40GB
+            payloads, now reused by the Tech Solutions team to power Notion and
+            Autodesk integrations, directly supporting enterprise revenue.
+          </li>
+          <li>
+            Led the Content Sync KTLO refactor on AWS Step Functions: resolved
+            deep-rooted race conditions, prioritized move-over-delete to prevent
+            data loss, and parallelized workflows, measurably reducing production
+            incidents in a historically fragile area.
+          </li>
+          <li>
+            Architected a generic webhook consumer pipeline (AWS API Gateway + SQS)
+            for Doc-to-Video generation (Colossyan), added customer brand-kit
+            support, and led a fast-track pod delivering video-edit capabilities.
+          </li>
+          <li>
+            Drove early architecture for AI Video Dub Generation (ElevenLabs):
+            designed new RPCs, service clients, and polling mechanisms; coordinated
+            cross-team localization with Rev-LMS for multilingual content.
+          </li>
+          <li>
+            Built secure backend APIs for an AI Roleplay marketing campaign (CORS,
+            JWT expiry, rate limiting, Marketo integration) that contributed to a
+            $1.76M sales pipeline across accounts including Microsoft and PepsiCo.
+          </li>
+          <li>
+            Owned end-to-end design and implementation of the Interactive Missions
+            insights engine in Go (Port &amp; Adapter architecture), enabling AI
+            recommendations for sales coaching; shipped Transfer/Delegate Reviews
+            with zero production bugs.
+          </li>
+          <li>
+            Diagnosed and optimized MS Viewer (WOPI) with distributed tracing
+            (Datadog), cutting p95 response time 3x and enabling GA; led Content &amp;
+            Missions NDP event instrumentation across 44 events with synthetic
+            monitoring and data-completeness validation.
+          </li>
+          <li>
+            Drove operational excellence: AI-assisted PagerDuty analysis
+            categorizing 100+ alerts cut daily pager noise from 20+ to ~5; led the
+            effort to get Mindtickle's app Google CASA security-certified.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Mindtickle — Software Development Engineer I</span>
+          <span class="job-meta">Pune · Jul 2022 – Jan 2024</span>
+        </div>
+        <ul>
+          <li>
+            Delivered Phase 2 of Missions AI Reviews: designed async LLM (GPT)
+            integration with an AI reviewer persona, idempotent retry pipelines, and
+            fallback logic, saving 33 reviewer-weeks for the Cisco mission; migrated
+            the LLM gateway from synchronous to asynchronous responses.
+          </li>
+          <li>
+            Optimized core recorder RPCs for the Cisco Flagship Event: made
+            high-latency SQL queries up to 30x faster and moved non-critical steps
+            (e.g. Kinesis puts) async, enabling load resilience at unprecedented
+            scale.
+          </li>
+          <li>
+            Rebuilt the Common Recorder as a backend-orchestrated, recoverable
+            pipeline achieving 99.7% accuracy; built production dashboards and
+            alerting (Metabase) supporting GA rollout.
+          </li>
+          <li>
+            Investigated and remediated a Kafka-connect consumer lag incident
+            affecting core mission/coaching workflows, introducing durable gRPC retry
+            mechanisms and auto-alerting; turned around the GSK coaching-reports fix
+            in 2 days to protect a December renewal.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Mindtickle — Software Engineer Intern</span>
+          <span class="job-meta">Pune · Jan 2022 – Jun 2022</span>
+        </div>
+        <ul>
+          <li>
+            Designed and launched a new event-driven recorder pipeline with robust
+            error recovery and resilience to duplicate / out-of-order events.
+          </li>
+          <li>
+            Led observability and monitoring strategy using Metabase &amp; SumoLogic,
+            laying the foundation for GA certification.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Samsung R&amp;D Institute — Software Engineer Intern</span>
+          <span class="job-meta">Bangalore · May 2021 – Jul 2021</span>
+        </div>
+        <ul>
+          <li>
+            Built an RL-driven TCP congestion window tuning model; tested via ns-3
+            simulations and implemented kernel-level adjustments on live devices.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <p><span class="label">Languages:</span> Go, Java, SQL, C++, Python</p>
+        <p><span class="label">Systems &amp; Messaging:</span> Kafka, gRPC, RabbitMQ, MySQL, Couchbase, Redis, Snowflake, Elasticsearch</p>
+        <p><span class="label">AWS / Cloud-native:</span> Step Functions, Lambda, API Gateway, SQS, Kinesis, EKS/Kubernetes, Docker</p>
+        <p><span class="label">AI / Integrations:</span> LLM APIs (GPT, Gemini), ElevenLabs, Colossyan, Marketo</p>
+        <p><span class="label">APIs:</span> REST, OpenAPI, GraphQL, gRPC, Play</p>
+        <p><span class="label">Observability &amp; Ops:</span> Datadog, SumoLogic, Metabase, PagerDuty, distributed tracing</p>
+      </div>
+    </section>
+
+    <section class="two-col" style="margin-top: 4px">
+      <div>
+        <h2>Education</h2>
+        <p style="margin: 0">
+          <span class="label">B.Tech, Information Technology</span><br />
+          Birla Institute of Technology, Mesra · 2018–2022 · CGPA 8.72/10
+        </p>
+      </div>
+      <div class="other">
+        <h2>Awards</h2>
+        <p style="margin: 0">
+          Exceeds Expectations (2023–2026) · High Quality Release Award (2024) ·
+          Data Driven Team Award (2024) · Winner, AIgnite AIML Hackathon (2025)
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
