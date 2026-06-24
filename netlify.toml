@@ -1,8 +1,8 @@
 # Plain static site — no build step. This file overrides the dashboard
 # build settings (previously `gatsby build` / `public/`).
 [build]
-  publish = "."
-  command = "echo 'Static site — no build step.'"
+  publish = "public"
+  command = "true"
 
 [[headers]]
   for = "/*"

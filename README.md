@@ -3,7 +3,7 @@
 </div>
 <h1 align="center">ishaan.ninja</h1>
 <p align="center">
-  My personal site, <a href="https://ishaan.ninja/" target="_blank">ishaan.ninja</a>.
+  My personal site, <a href="https://ishaan.netlify.app/" target="_blank">ishaan.netlify.app</a>.
   A single-page, no-build static site (plain HTML + CSS) hosted on
   <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
@@ -11,25 +11,27 @@
 ## Structure
 
 ```
-index.html      # the whole page
-styles.css      # all styling (dark theme, responsive)
-resume.pdf      # downloadable resume
-assets/         # photo + favicon
-netlify.toml    # deploy config (no build, publish root)
+public/
+  index.html      # the whole page
+  styles.css      # all styling (dark theme, responsive)
+  resume.pdf      # downloadable resume
+  assets/         # photo + favicon
+resume.source.html  # print source for resume.pdf
+netlify.toml        # deploy config (no build, publish public/)
 ```
 
 ## Develop
 
-No build step or dependencies. Open `index.html` directly, or serve it:
+No build step or dependencies. Open `public/index.html` directly, or serve it:
 
 ```shell
-python3 -m http.server 8000   # then open http://localhost:8000
+cd public && python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
 ## Deploy
 
-Netlify auto-deploys the `master` branch. `netlify.toml` sets no build command
-and publishes the repo root.
+Netlify auto-deploys the `master` branch. `netlify.toml` sets a no-op build
+command and publishes `public/`.
 
 ### Regenerating the resume PDF
 
